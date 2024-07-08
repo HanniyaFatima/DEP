@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="profile-card">
+        <img src="profilepichania.jpeg" alt="Profile Picture" class="profile-img">
+        <h1>Hanniya Fatima</h1>
+        <h2>Front-end Google Certified</h2>
+        <p>An enthusiastic web developer skilled in creating contemporary, responsive websites.</p>
+        <p><strong>Qualification:</strong> Bachelor of Science in Software Engineering</p>
+        <p><strong> Member Of Google Development Students Club </strong></strong></p>
+        <div class="social-icons">
+            <a href="https://github.com/HanniyaFatima" target="_blank" title="GitHub"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/hanniya-fatima-9856ba281/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button onclick="showContactInfo()" id="contact_button" title="Contact Information">Contact</button></p>
+        <div id="contact_info" style="display: none;">
+            <p>Email: Hanniyafatima400@gmail.com</p>
+            <p>Phone: 0312-5107852</p>
+            <p>Fax: 051-2620099</p>
+        </div>
+        <h3><strong> Projects Completed:</strong></h3>
+        <ul>
+            <li> Responsive Grocery Website</li>
+            <li> E-commerce Website for a Local Business</li>
+            <li> Blog Platform with User Authentication</li>
+        </ul>
+    </div>
+
+    <script>
+        function showContactInfo() {
+            var contactInfo = document.getElementById("contact_info");
+            contactInfo.style.display = "block";
+        }
+    </script>
+</body>
+</html>
